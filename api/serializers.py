@@ -25,3 +25,34 @@ class ProductDetailSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.Product
         fields = '__all__'
+
+
+class UserSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.User
+        fields = ['id', 'username', 'email']
+
+# ==========================================================================
+
+class BannerSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.Banner
+        fields = '__all__'
+
+
+class InfoSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.Info
+        fields = '__all__'
+
+
+class ProductEnterSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.Product
+        fields = '__all__'
+    
+
+class WishListSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.WishList
+        fields = '__all__'
